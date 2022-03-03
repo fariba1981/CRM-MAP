@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+}
+
+.title {
+  text-align: left;
+  margin-left: 40px;
+}
+
+.leaflet-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.circle-magic-kingdom {
+  fill: none;
+  stroke: red;
+  stroke-width: 5px;
+  animation: MagicKingdom infinite 5s;
+  transition: stroke-width .5s;
+}
+
+.circle-magic-kingdom:hover {
+  stroke-width: 15px;
+}
+
+@keyframes MagicKingdom {
+  0% {
+    stroke: red;
+  }
+  14% {
+    stroke: orange;
+  }
+  28% {
+    stroke: yellow;
+  }
+  43% {
+    stroke: lime;
+  }
+  57% {
+    stroke: blue;
+  }
+  71% {
+    stroke: blueviolet;
+  }
+  85% {
+    stroke: magenta;
+  }
+  100% {
+    stroke: red;
+  }
+}
+
+.showRequest {
+  margin-left: 20px;
+  margin-right: 20px;
+}
